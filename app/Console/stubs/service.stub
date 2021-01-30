@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Models\DummyModel;
+
+/**
+ * Class DummyClass
+ * @package App\Services
+ */
+class DummyClass extends AbstractService
+{
+    public function __construct()
+    {
+        parent::__construct(DummyModel::class);
+    }
+}
