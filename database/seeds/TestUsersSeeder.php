@@ -11,6 +11,7 @@ class TestUsersSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // モデルファクトリーで定義したテストユーザーを 20 作成
+        factory(App\User::class, 20)->create();
     }
 }
